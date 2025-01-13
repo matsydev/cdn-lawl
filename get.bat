@@ -16,10 +16,10 @@ if not exist ".git" (
 )
 
 echo Récupération des nouveautés depuis GitHub...
-git fetch origin %BRANCH_NAME%
+git fetch origin
 
-echo Fusion des dernières modifications...
-git merge origin/%BRANCH_NAME%
+echo Mise à jour des fichiers locaux...
+git pull origin %BRANCH_NAME%
 
 echo Mise à jour terminée.
 pause
